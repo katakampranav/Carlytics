@@ -13,7 +13,6 @@ Carlytics is an AI-powered web application that allows users to upload images of
 - [Project Structure](#project-structure)
 - [API Details](#api-details)
 - [Contributing](#contributing)
-- [License](#license)
 
 ---
 
@@ -102,28 +101,40 @@ npm run dev
 ## Project Structure
 
 ```
-Carlytics/
-│
-├── client/                  # React frontend
-│   ├── src/
-│   │   ├── components/
-│   │   │   └── CarForm.jsx
-│   │   ├── pages/
-│   │   │   ├── Home.jsx
-│   │   │   └── ResultPage.jsx
-│   │   └── App.jsx
-│   └── package.json
-│
-├── server/                  # FastAPI backend
-│   ├── controllers/
-│   │   ├── image_captioning.py
-│   │   ├── sale_prediction.py
-│   │   └── image_url_generator.py
-│   ├── main.py
-│   ├── requirements.txt
-│   └── routes.py
-│
-└── README.md
+CarLytics/
+    ├── README.md
+    ├── client/                      //Frontend
+    │   ├── README.md
+    │   ├── eslint.config.js
+    │   ├── index.html
+    │   ├── package.json
+    │   ├── vite.config.js
+    │   └── src/
+    │       ├── App.jsx
+    │       ├── index.css
+    │       ├── main.jsx
+    │       ├── components/
+    │       │   └── CarForm.jsx
+    │       └── pages/
+    │           ├── Home.jsx
+    │           └── ResultPage.jsx
+    └── server/                        //Backend
+        ├── README.md
+        ├── __init__.py
+        ├── main.py
+        ├── pyproject.toml
+        ├── requirements.txt
+        ├── testing.py
+        ├── .python-version
+        ├── controllers/
+        │   ├── __init__.py
+        │   ├── image_captioning.py
+        │   ├── image_url_generator.py
+        │   └── sale_prediction.py
+        └── routes/
+            ├── __init__.py
+            └── sale_prediction_route.py
+
 ```
 
 ---
