@@ -40,7 +40,7 @@ const CarForm = () => {
       data.append("additional_info", formData.additional_info);
 
       const res = await axios.post(
-        "http://localhost:8000/predict_sale/analysis",
+        `${import.meta.env.VITE_BACKEND_URL}/predict_sale/analysis`,
         data,
         { headers: { "Content-Type": "multipart/form-data" } }
       );
